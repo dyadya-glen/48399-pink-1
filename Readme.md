@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Роман Гуляев](https://up.htmlacademy.ru/adaptive/6/user/48399).
-* Наставник: `Без насиавника`.
+* Наставник: `Без наставника`.
 
 ---
 
