@@ -3,347 +3,200 @@
 
 <head>
   <meta charset="utf-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>HTML Academy: Пинк</title>
-
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
-
 <body class="photo-page">
-
   <header class="page-header  page-header--form">
-
     <div class="page-header__wrapper">
-
       <nav class="main-nav">
-
         <a href="index.html" class="page-header__logo">PINK</a>
-
         <span class="main-nav__toggle  main-nav__toggle--show"></span>
-
         <span class="main-nav__clased  main-nav__clased--show"></span>
-
         <ul class="main-nav__items">
-
           <li class="main-nav__item"><a href="index.html">Главная</a></li>
-
           <li class="main-nav__item"><a>Фотографии</a></li>
-
           <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-
           <li class="main-nav__item"><a href="https://htmlacademy.ru/" target="blank">HMTL Academy</a></li>
-
         </ul>
-
       </nav>
-
       <h1 class="page-header__slogan  page-header__slogan--photo">Фотографии пользователей</h1>
-
     </div>
-
   </header>
-
-
   <main class="pages-photo">
-
     <header class="pages-photo__header">
-
       <div class="slogan-block">
-
         <p class="slogan-block__text  slogan-block__text--photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-
       </div>
-
       <div class="pages-photo__flag">
-        <picture>
-
-          <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-
-          <source media="(min-width: 700px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-
-          <img class="pages-photo__panorama-img" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
-
-        </picture>
+        <a href="img/panorama-desktop@2x.jpg" target="blank" class="pages-photo__link">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="pages-photo__panorama-img" src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+          </picture>
+        </a>
       </div>
-
       <div class="pages-photo__panorama-post">
-
         <article class="photo-post">
-
           <h1 class="photo-post__author">Анна <time datetime="2016-04-06 12:00" class="photo-post__published-time">(5 минут назад)</time></h1>
-
           <p class="photo-post__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-
           <a href="#" class="photo-post__like-link">Нравится: </a><span class="photo-post__like">215</span>
-
         </article>
-
       </div>
-
     </header>
-
     <div class="pages-photo__wrapper">
-
       <div class="pages-photo__post-wrapper">
-        <picture>
-
-          <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-
-          <source media="(min-width: 700px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-
-          <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="картинка" class="pages-photo__img" srcset="img/photo-1-mobile@2x.jpg 2x">
-
-        </picture>
-
+        <a href="img/photo-1-desktop@2x.jpg" class="pages-photo__link-big-picture" target="blank">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+            <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="картинка" class="pages-photo__img">
+          </picture>
+        </a>
         <article class="photo-post">
-
-          <h1 class="photo-post__author">Левон <time datetime="2016-04-06 7:00" class="photo-post__published-time">(5 часов назад)</time></h1>
-
+          <h1 class="photo-post__author">Левон <time datetime="2016-04-06 07:00" class="photo-post__published-time">(5 часов назад)</time></h1>
           <p class="photo-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-
           <a href="#" class="photo-post__like-link">Нравится: </a><span class="photo-post__like">356</span>
-
         </article>
       </div>
-
       <div class="pages-photo__post-wrapper">
-        <picture>
-
-          <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-
-          <source media="(min-width: 700px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-
-          <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="картинка" class="pages-photo__img">
-
-        </picture>
-
+        <a href="img/photo-2-desktop@2x.jpg" class="pages-photo__link-big-picture" target="blank">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+            <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="картинка" class="pages-photo__img">
+          </picture>
+        </a>
         <article class="photo-post">
-
           <h1 class="photo-post__author">Антон <time datetime="2016-04-06 00:00" class="photo-post__published-time">(12 часов назад)</time></h1>
-
           <p class="photo-post__text">Соседи будут рады!</p>
-
           <a href="#" class="photo-post__like-link">Нравится: </a><span class="photo-post__like">666</span>
-
         </article>
       </div>
-
       <div class="pages-photo__post-wrapper">
-        <picture>
-
-          <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-
-          <source media="(min-width: 700px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-
-          <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="картинка" class="pages-photo__img">
-
-        </picture>
-
+        <a href="img/photo-3-desktop@2x.jpg" class="pages-photo__link-big-picture" target="blank">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+            <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="картинка" class="pages-photo__img">
+          </picture>
+        </a>
         <article class="photo-post">
-
           <h1 class="photo-post__author">Борис  <time datetime="2016-04-05 22:00" class="photo-post__published-time">(20 часов назад)</time></h1>
-
           <p class="photo-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-
           <a href="#" class="photo-post__like-link">Нравится: </a><span class="photo-post__like">215</span>
-
         </article>
       </div>
-
       <div class="pages-photo__post-wrapper">
-        <picture>
-
-          <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-
-          <source media="(min-width: 700px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-
-          <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="картинка" class="pages-photo__img">
-
-        </picture>
-
+        <a href="img/photo-4-desktop@2x.jpg" class="pages-photo__link-big-picture" target="blank">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+            <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="картинка" class="pages-photo__img">
+          </picture>
+        </a>
         <article class="photo-post">
-
           <h1 class="photo-post__author">Сергей  <time datetime="2016-04-05 17:00" class="photo-post__published-time">(25 часов назад)</time></h1>
-
           <p class="photo-post__text">Самая кубанская в мире!</p>
-
           <a href="#" class="photo-post__like-link">Нравится: </a><span class="photo-post__like">4</span>
-
         </article>
       </div>
-
       <div class="pages-photo__post-wrapper">
-        <picture>
-
-          <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
-
-          <source media="(min-width: 700px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
-
-          <img src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="картинка" class="pages-photo__img">
-
-        </picture>
-
+        <a href="img/photo-5-desktop@2x.jpg" class="pages-photo__link-big-picture" target="blank">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+            <img src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="картинка" class="pages-photo__img">
+          </picture>
+        </a>
         <article class="photo-post">
-
-          <h1 class="photo-post__author">Максим <time datetime="2016-04-04 7:00" class="photo-post__published-time">(40 часов назад)</time></h1>
-
+          <h1 class="photo-post__author">Максим <time datetime="2016-04-04 07:00" class="photo-post__published-time">(40 часов назад)</time></h1>
           <p class="photo-post__text">Где снег-то?</p>
-
           <a href="#" class="photo-post__like-link">Нравится: </a><span class="photo-post__like">150</span>
-
         </article>
       </div>
-
       <div class="pages-photo__post-wrapper">
-        <picture>
-
-          <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
-
-          <source media="(min-width: 700px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
-
-          <img src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="картинка" class="pages-photo__img">
-
-        </picture>
-
+        <a href="img/photo-6-desktop@2x.jpg" class="pages-photo__link-big-picture" target="blank">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+            <img src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="картинка" class="pages-photo__img">
+          </picture>
+        </a>
         <article class="photo-post">
-
-          <h1 class="photo-post__author">Надежда <time datetime="2016-04-04 3:00" class="photo-post__published-time">(45 часов назад)</time></h1>
-
+          <h1 class="photo-post__author">Надежда <time datetime="2016-04-04 03:00" class="photo-post__published-time">(45 часов назад)</time></h1>
           <p class="photo-post__text">Всем GM и взаимные лайки!</p>
-
           <a href="#" class="photo-post__like-link">Нравится: </a><span class="photo-post__like">2560</span>
-
         </article>
       </div>
-
     </div>
-
     <div class="slogan-block  slogan-block--photo-bottom">
-
       <p class="slogan-block__text">Затмите их всех!</p>
-
       <p class="slogan-block__text">Выкладывайте все, что накопилось в телефоне!</p>
-
     </div>
-
-    <div class="photo-upload">
-
+    <form class="photo-upload" action="index.html" method="post" name="photo-upload">
       <div class="photo-upload__picture">
-
         <picture>
-
           <source media="(min-width: 1200px)" srcset="img/photo-7-desktop.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
-
           <source media="(min-width: 700px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
-
           <img src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="твоя картинка" class="photo-upload__img">
-
         </picture>
-
       </div>
-
       <div class="photo-upload__management">
-
         <div class="photo-upload__filter">
-
           <div class="photo-upload__icons">
-
             <div class="photo-upload__icon  photo-upload__icon-crop">
-
               <input class="photo-upload__input-crop" type="checkbox" name="crop" id="crop" checked>
-
               <label class="photo-upload__label-crop" for="crop"></label>
-
             </div>
-
             <div class="photo-upload__icon  photo-upload__icon-fill">
-
               <input class="photo-upload__input-fill" type="checkbox" name="fill" id="fill">
-
               <label class="photo-upload__label-fill" for="fill"></label>
-
             </div>
-
             <div class="photo-upload__icon  photo-upload__icon-contrast">
-
               <input class="photo-upload__input-contrast" type="checkbox" name="contrast" id="contrast">
-
               <label class="photo-upload__label-contrast" for="contrast"></label>
-
             </div>
           </div>
-
           <div class="photo-upload__controls">
-
             <div class="photo-upload__range-control photo-upload__range-control--crop control-show">
-
               <div class="photo-upload__scale"></div>
-
               <div class="photo-upload__toggle  photo-upload__toggle--crop  toggle-show"></div>
-
             </div>
-
             <div class="photo-upload__range-control photo-upload__range-control--fill">
-
               <div class="photo-upload__scale"></div>
-
               <div class="photo-upload__toggle  photo-upload__toggle--fill"></div>
-
             </div>
-
             <div class="photo-upload__range-control photo-upload__range-control--contrast">
-
               <div class="photo-upload__scale"></div>
-
               <div class="photo-upload__toggle  photo-upload__toggle--contrast"></div>
-
             </div>
-
           </div>
-
         </div>
-
         <div class="photo-upload__buttons">
-
-          <button type="button" name="post" class="photo-upload__btn  photo-upload__btn--post">Запостить</button>
-
-          <button type="button" name="cancel" class="photo-upload__btn  photo-upload__btn--cancel">Отмена</button>
-
+          <button type="submit" name="post" class="photo-upload__btn  photo-upload__btn--post">Запостить</button>
+          <button type="reset" name="cancel" class="photo-upload__btn  photo-upload__btn--cancel">Отмена</button>
         </div>
-
       </div>
-
-    </div>
-
+    </form>
   </main>
-
-
   <footer class="page-footer  page-footer--photo">
-
     <div class="page-footer__wrapper">
-
       <a href="index.html" class="page-footer__logo">PINK</a>
-
       <section class="page-footer__social-network">
-
         <a href="https://twitter.com/htmlacademy_ru" class="page-footer__social-linck page-footer__social-linck--twitter" target="_blank">twitter</a>
-
         <a href="https://www.facebook.com/htmlacademy" class="page-footer__social-linck page-footer__social-linck--facebook" target="_blank">facebook</a>
-
         <a href="http://www.youtube.com/user/htmlacademyru" class="page-footer__social-linck page-footer__social-linck--youtube" target="_blank">youtube</a>
-
       </section>
-
-        <a href="https://htmlacademy.ru/" class="page-footer__copyright" target="_blank">Разработано</a>
-
+      <a href="https://htmlacademy.ru/" class="page-footer__copyright" target="_blank">Разработано</a>
     </div>
-
   </footer>
+
   <script src="js/main.js"></script>
+
 </body>
 
 </html>
