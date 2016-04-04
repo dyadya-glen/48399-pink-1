@@ -1,0 +1,70 @@
+.slogan-block {
+  text-align: center;
+  margin: 0 6.25%;
+
+  &--photo-bottom {
+    padding-top: 22px;
+    padding-bottom: 41px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
+
+    &--first {
+      margin-top: 46px;
+    }
+
+    &--second {
+      display: none;
+    }
+
+    &--photo {
+      padding: 47px 6.7%;
+    }
+  }
+}
+
+@media ($tablet-widths) {
+
+  .slogan-block {
+    margin: 0 15%;
+    padding-top: 92px;
+    max-width: 760px;
+
+    &__text {
+      font-size: 18px;
+
+      &--first {
+        display: inline;
+      }
+
+      &--second {
+        display: inline;
+      }
+
+      &--photo {
+        padding: 0;
+        padding-bottom: 76px;
+      }
+    }
+
+    &--photo-bottom {
+      padding-top: 0px;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+
+  .slogan-block {
+    margin: 0 auto;
+
+    &__text--photo {
+      padding-bottom: 88px;
+      padding-left: 11%;
+      padding-right: 11%;
+    }
+  }
+}

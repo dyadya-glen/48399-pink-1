@@ -1,0 +1,279 @@
+.prices {
+  padding-top: 90px;
+  background: #f2f2f2 url(../img/bg-triangle-white.svg) no-repeat center top;
+  background-size: 105%;
+  margin-bottom: 45px;
+
+  & th, & td {
+    border: 2px solid #e5e5e5;
+  }
+
+  &__wrapper {
+    //width: 280px;
+    width: auto;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  &__table {
+    background-color: #fff;
+    position: relative;
+
+    &--center {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--left {
+      left: 0;
+      transform: translateX(0%);
+    }
+
+    &--right {
+      left: 100%;
+      transform: translateX(-100%);
+    }
+  }
+
+
+  &__title-cel {
+    background-color: #283645;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    height: 99px;
+  }
+
+  &__amount {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    width: 276px;
+  }
+
+  &__flag-hit {
+    display: block;
+    position: absolute;
+    top: 2px;
+    width: 72px;
+    height: 72px;
+    background-image: url(../img/bg-hit.svg);
+    background-repeat: no-repeat;
+    background-size: 70px;
+
+    &::before {
+      content: 'Хит';
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-style: normal;;
+      transform: rotate(-45deg);
+
+    }
+  }
+
+  &__checkeds {
+    position: relative;
+
+    &--filtr, &--smile, &--comment {
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        content: 'Розовый фильтр';
+        display: block;
+        font-size: 14px;
+        line-height: 30px;
+        text-transform: uppercase;
+        padding-left: 23px;
+      }
+    }
+    &--smile::before {
+      content: 'Смайлики';
+    }
+
+    &--comment::before {
+      content: 'Комментарии';
+    }
+  }
+
+  &__sheced-no, &__sheced-yes {
+    display: block;
+    width: 59px;
+    height: 59px;
+    font-size: 0;
+    float: right;
+    background-image: url(../img/icon-yes.svg);
+    background-repeat: no-repeat;
+    background-size: 31px;
+    background-position: center ;
+  }
+
+  &__sheced-no {
+    background-image: url(../img/icon-no.svg);
+    background-size: 28px;
+  }
+
+  &__feature, &__cel-first {
+    display: none;
+  }
+
+  &__slider-controls {
+    padding: 43px 0;
+    text-align: center;
+    line-height: 0;
+    font-size: 0;
+  }
+  &__slider-control {
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+    border: 3px solid #f2f2f2;
+    background-color: rgba(40, 54, 69, .3);
+    border-radius: 50%;
+    margin: 0 6px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(40, 54, 69, .6);
+    }
+
+    &:active {
+      background-color: rgba(40, 54, 69, .1);
+    }
+
+    &--active, &--active:hover {
+      border-color: rgba(40, 54, 69, 1);
+      background-color: #fff;
+      cursor: default;
+    }
+  }
+}
+
+th.prices__cel-first {
+  border: none;
+}
+
+
+@media ($tablet-widths) {
+
+  .prices {
+
+    &__wrapper {
+      width: auto;
+      margin: 0 6.25%;
+      overflow: visible;
+      padding-bottom: 70px;
+    }
+
+    &__table {
+      margin: 0 auto;
+      margin-top: 10px;
+      width: 100%;
+      border-collapse: collapse;
+      border: 2px solid #f2f2f2;
+      left: 0;
+
+
+      &--center, &--left, &--right {
+        transform: none;
+      }
+    }
+
+    &__title-cel {
+      font-size: 16px;
+      height: 76px;
+    }
+
+    &__amount {
+      font-size: 18px;
+      width: auto;
+    }
+
+    &__flag-hit {
+      background-size: 60px;
+
+      &::before {
+        top: 6px;
+        left: 6px;
+
+      }
+    }
+
+    &__checkeds {
+      width: 25%;
+
+      &--filtr, &--smile, &--comment {
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    &__sheced-no, &__sheced-yes {
+      float: none;
+      margin: 0 auto;
+      height: 45px;
+    }
+
+    &__feature, &__cel-first {
+      display: table-cell;
+      width: 25%;
+      padding-left: 2.5%;
+    }
+
+    &__cel-first {
+      background-color: #f2f2f2;
+      border: 4px solid #f00;
+    }
+
+    &__slider-controls {
+      display: none;
+    }
+  }
+}
+
+
+@media ($desktop-widths) {
+
+  .prices {
+
+    &__wrapper {
+      max-width: 942px;
+      margin: 0 auto;
+      padding-top: 55px;
+      padding-bottom: 93px;
+    }
+
+    &__title-cel {
+      font-size: 18px;
+      height: 99px;
+    }
+
+    &__amount {
+      font-size: 24px;
+    }
+
+    &__flag-hit {
+      background-size: 72px;
+
+      &::before {
+        top: 11px;
+        left: 11px;
+      }
+    }
+
+    &__sheced-no, &__sheced-yes {
+      height: 59px;
+    }
+
+    &__feature {
+      font-size: 18px;
+    }
+  }
+}

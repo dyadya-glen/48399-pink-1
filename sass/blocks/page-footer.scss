@@ -1,0 +1,159 @@
+.page-footer {
+  display: none;
+  padding-top: 27px;
+
+  &__wrapper {
+    margin: 0 6.25%;
+    text-align: center;
+
+    @include clearfix;
+  }
+
+  &__logo {
+    font-size: 0;
+    display: block;
+    vertical-align: top;
+    width: 146.3px;
+    height: 40.375px;
+    background: url(../img/logo-pink-footer-tablet.svg) no-repeat;
+    margin: auto;
+
+    &:hover {
+      background: url(../img/logo-pink-footer-hover-tablet.svg) no-repeat;
+    }
+
+    &:active {
+      background: url(../img/logo-pink-footer-active-tablet.svg) no-repeat;
+    }
+  }
+
+  &__social-network {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+  }
+
+  &__social-linck {
+    display: inline-block;
+    vertical-align: top;
+    height: 46px;
+    width: 46px;
+    border: 3px solid rgba(40, 54, 69, .1);
+    border-radius: 50%;
+    margin-top: 38px;
+
+    &:hover {
+      border-color: #283645;
+    }
+
+    &:active {
+      border-color: rgba(40, 54, 69, .1);
+    }
+
+    &--twitter {
+      background: url(../img/icon-twitter.svg) no-repeat center;
+
+        &:active {
+          background-image: url(../img/icon-twitter-active.svg);
+        }
+    }
+
+    &--facebook {
+      background: url(../img/icon-facebook.svg) no-repeat center;
+      margin-left: 12px;
+      margin-right: 12px;
+
+      &:active {
+        background-image: url(../img/icon-facebook-active.svg);
+      }
+    }
+
+    &--youtube {
+      background: url(../img/icon-youtube.svg) no-repeat 17px center;
+
+      &:active {
+        background-image: url(../img/icon-youtube-active.svg);
+      }
+    }
+  }
+
+  &__copyright {
+    display: block;
+    width: 128px;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #283645;
+    background: url(../img/logo-htmlacademy.svg) no-repeat right center;
+    padding-top: 7px;
+    padding-bottom: 13px;
+    padding-right: 40px;
+    margin: 45px auto;
+
+    &:hover {
+      background-image: url(../img/logo-hover-htmlacademy.svg);
+    }
+
+    &:active {
+      background-image: url(../img/logo-active-htmlacademy.svg);
+    }
+  }
+
+  &--form, &--photo {
+    display: block;
+  }
+
+}
+
+
+@media ($tablet-widths) {
+  .page-footer {
+    display: block;
+    padding-top: 0;
+
+    &__logo {
+      float: left;
+      margin-top: 37px;
+      margin-bottom: 50px;
+    }
+
+    &__copyright {
+      width: auto;
+      float: right;
+    }
+  }
+}
+
+
+@media ($desktop-widths) {
+
+  .page-footer {
+    padding-top: 33px;
+    padding-bottom: 37px;
+
+    &__wrapper {
+      max-width: 940px;
+      margin: 0 auto;
+    }
+
+    &__logo {
+      background: url(../img/logo-pink-blue-desktop.svg) no-repeat;
+
+      &:hover {
+        background: url(../img/logo-pink-footer-hover-desktop.svg) no-repeat;
+      }
+
+      &:active {
+        background: url(../img/logo-pink-footer-active-tablet.svg) no-repeat;
+      }
+    }
+
+
+    &__copyright {
+      font-size: 18px;
+    }
+  }
+}
