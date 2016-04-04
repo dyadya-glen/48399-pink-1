@@ -1,0 +1,170 @@
+.page-form{
+
+  &__third-block {
+    position: relative;
+  }
+
+  &__legend--third-block {
+    display: none;
+  }
+
+  &__phone-input-label, &__email-input-label {
+    color: #d22856;
+    line-height: 38px;
+    text-transform: uppercase;
+    padding-left: 24px;
+  }
+
+  &__phone-input, &__email-input {
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    padding: 0;
+    padding-left: 22px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #283645;
+    line-height: 59px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+
+    &:hover {
+      border-color: #283645;
+    }
+
+    &:active {
+      border-color: #d22856;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #283645;
+      opacity: 1;
+      text-overflow:ellipsis;
+    }
+
+    &::-moz-placeholder {
+      color: #283645;
+      opacity: 1;
+      text-overflow:ellipsis;
+    }
+
+    &:-moz-placeholder {
+      color: #283645;
+      opacity: 1;
+      text-overflow:ellipsis;
+    }
+
+    &:-ms-input-placeholder {
+      color: #283645;
+      opacity: 1;
+      text-overflow:ellipsis;
+    }
+
+    &:focus::-webkit-input-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      outline: 0;
+    }
+
+    &:focus::-moz-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:focus:-moz-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:focus:-ms-input-placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+}
+
+
+@media ($tablet-widths) {
+
+  .page-form {
+
+    &__third-block {
+      order: 3;
+      border: 2px solid #e5e5e5;
+      border-radius: 3px;
+      background-color: #fff;
+      margin: 0 6.25%;
+      margin-bottom: 67px;
+      height: 310px;
+      box-sizing: border-box;
+    }
+
+
+    &__legend--third-block {
+      display: block;
+      min-width: 0;
+      width: 201px;
+    }
+
+    &__phone-input {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 80%;
+      margin: 45px 10%;
+      padding-right: 6.5%;
+      background: url(../img/icon-phone.svg) no-repeat 95% center;
+    }
+
+    &__phone-input-label {
+      position: absolute;
+      left: 0px;
+      top:114px;
+      margin-left: 10%;
+    }
+
+    &__email-input {
+      position: absolute;
+      left: 0;
+      width: 80%;
+      margin: 148px 10%;
+      padding-right:  6.5%;
+      background: url(../img/icon-mail.svg) no-repeat 95% center;
+    }
+
+    &__email-input-label {
+      position: absolute;
+      left: 0px;
+      top:246px;
+      margin-left: 10%;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+
+  .page-form {
+
+    &__third-block {
+      width: 100%;
+      margin: 75px 0;
+      height: 162px;
+    }
+
+    &__phone-input {
+      width: 40%;
+      margin-left: 6.2%;
+    }
+
+    &__email-input {
+      left: 43.8%;
+      width: 40%;
+      margin: 16px 10%;
+    }
+
+    &__email-input-label {
+      left: 45%;
+      top:115px;
+    }
+  }
+}

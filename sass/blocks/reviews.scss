@@ -1,0 +1,96 @@
+.reviews {
+
+  &__slider-controls {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+    line-height: 0;
+    font-size: 0;
+  }
+  &__slider-control {
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+    border: 3px solid #fff;
+    background-color: rgba(40, 54, 69, .3);
+    border-radius: 50%;
+    margin: 0 6px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(40, 54, 69, .6);
+      //border: 3px solid #fff;
+    }
+
+    &:active {
+      background-color: rgba(40, 54, 69, .1);
+    }
+
+    &--active, &--active:hover {
+      border-color: rgba(40, 54, 69, 1);
+      background-color: #fff;
+      cursor: default;
+    }
+  }
+
+  &__arrows {
+    display: none;
+  }
+}
+
+@media ($tablet-widths) {
+
+}
+
+@media ($desktop-widths) {
+  .reviews {
+    position: relative;
+    background-image: url(../img/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 114px;
+
+    &__slider-controls {
+      display: none;
+    }
+
+    &__arrows {
+      position: absolute;
+      display: block;
+      width: 79.8%;
+      max-width: 950px;
+      height: 42px;
+      left: 50%;
+      top: 50%;
+      transform: translateY(-30%) translateX(-50%);
+    }
+
+    &__arrow-left, &__arrow-right {
+      display: block;
+      width: 30px;
+      height: 30px;
+      float: left;
+      border-top: 2px solid;
+      border-left: 2px solid;
+      border-color: rgba(40, 54, 69, .3);
+      transform: rotate(-45deg) translateY(8px);
+      cursor: pointer;
+
+      &:hover {
+        border-color: rgba(40, 54, 69, .6);
+      }
+
+      &:active {
+        border-color: rgba(40, 54, 69, .1);
+      }
+    }
+
+    &__arrow-right {
+      float: right;
+      transform: rotate(45deg) translateY(8px);
+      border-right: 2px solid rgba(40, 54, 69, .3);
+      border-left: none;
+    }
+  }
+}

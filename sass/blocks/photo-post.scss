@@ -1,0 +1,41 @@
+.photo-post {
+  background-color: #f2f2f2;
+  min-height: 155px;
+  padding: 6.25%;
+  line-height: 24px;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-bottom: 6.25%;
+
+  &__author {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__published-time {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  &__like-link {
+    font-size: 12px;
+    padding-left: 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #d22856;
+    background: url(../img/icon-heart.svg) no-repeat left center;
+  }
+
+  &__like {
+    color: #d22856;
+    font-size: 12px;
+  }
+}

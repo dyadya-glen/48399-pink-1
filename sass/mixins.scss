@@ -1,0 +1,48 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media ($tablet-widths) {
+    width: 620px;
+  }
+
+  @media ($desktop-widths) {
+    width: 940px;
+  }
+}
+
+
+@mixin outline {
+  outline: 2px solid #ff88aa;
+}
+
+
+@mixin wrap {
+  &__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+@mixin header-hover {
+  &:hover, &:hover::before, &:hover::after {
+    background-color: #d22856;
+    border-color: #d22856;
+  }
+}
+
+@mixin header-active {
+  &:hover {
+    background-color: #d22856;
+    opacity: .3;
+  }
+}

@@ -1,0 +1,104 @@
+.page-form {
+
+  &__second-block {
+    position: relative;
+    background-color: #f2f2f2;
+    padding-top: 112px;
+  }
+
+  & input[type="checkbox"] {
+    display: none;
+  }
+
+  &__checkbox-input-label {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    line-height: 39px;
+    padding-left: 70px;
+    margin-bottom: 43px;
+    cursor: pointer;
+
+    &:hover::before  {
+      border-color: #283645;
+    }
+
+    &:active::before  {
+      border-color: #d22856;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      left: 0;
+      border: 2px solid #e5e5e5;
+      border-radius: 2px;
+      background-color: #fff;
+    }
+
+    &::after {
+      content: '';
+      display: none;
+      position: absolute;
+      left: 14px;
+      top: 5px;
+      height: 20px;
+      width: 10px;
+      border-right: 2px solid #d22856;
+      border-bottom: 2px solid #d22856;
+      border-radius: 1px;
+      transform: rotate(45deg);
+    }
+  }
+
+  & input[type="checkbox"]:checked + label::after {display: block;}
+}
+
+@media ($tablet-widths) {
+
+  .page-form {
+
+    &__second-block {
+      order: 4;
+      border: 2px solid #e5e5e5;
+      border-radius: 3px;
+      background-color: #fff;
+      padding: 54px 58px;
+      padding-bottom: 14px;
+      margin: 0 6.25%;
+      margin-bottom: 67px;
+    }
+
+    &__legend--second-block {
+      width: 376px;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+
+  .page-form {
+
+    &__second-block {
+      width: 100%;
+      margin: 0;
+      padding-right: 0;
+      padding-left: 6.5%;
+    }
+
+    &__second-block-wrapper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: 165px;
+    }
+
+    &__checkbox-input-label {
+      width: 23.5%;
+      padding-left: 60px;
+    }
+  }
+}

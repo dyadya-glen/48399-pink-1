@@ -1,0 +1,136 @@
+.mobile-apps {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -50%;
+
+  &__slogan {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    width: 72%;
+    min-height: 60px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 94px;
+    margin-bottom: 316px;
+  }
+
+  &__wrapper {
+    padding-top: 26px;
+    font-size: 0;
+    text-align: center;
+  }
+
+  &__btn {
+    display: block;
+    width: 275px;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    line-height: 18px;
+    text-align: center;
+    border: 3px solid white;
+    padding: 16px 0px;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+
+    &:hover {
+      color:  rgb(210, 40, 86);
+      background-color: #fff;
+    }
+
+    &:active {
+      color:  rgba(210, 40, 86, .3);
+      background-color: #fff;
+    }
+  }
+
+  &__apple, &__android, &__windows {
+    display: inline-block;
+    width: 47px;
+    height: 57px;
+    background: url(../img/logo-apple.svg) no-repeat;
+    font-size: 0;
+  }
+
+  &__android {
+    width: 43px;
+    height: 57px;
+    background: url(../img/logo-android.svg) no-repeat center 8px;
+    margin: 0 34px;
+  }
+
+  &__windows {
+    width: 44px;
+    height: 57px;
+    background: url(../img/logo-microsoft.svg) no-repeat center 12px;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #fff;
+    padding: 10px 6.8%;
+  }
+}
+
+
+@media ($tablet-widths) {
+  .mobile-apps {
+    top: 110px;
+    left: 0;
+    margin-left: 40px;
+    width: 44%;
+
+    &__slogan {
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 49px;
+      width: 200px;
+      min-height: 60px;
+      margin: 0 auto;
+      margin-top: 94px;
+    }
+
+    &__btn {
+      width: 300px;
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 20px 2.1%;
+    }
+  }
+}
+
+
+@media ($desktop-widths) {
+  .mobile-apps {
+    position: static;
+    width: 36%;
+    margin-left: 5%;
+
+    &__slogan {
+      font-size: 50px;
+      line-height: 65px;
+      margin-top: 103px;
+      margin-bottom: 15px;
+      width: 300px;
+    }
+
+    &__btn {
+      margin-bottom: 65px;
+    }
+
+    &__text {
+      padding: 40px 50px;
+    }
+  }
+}
