@@ -20,6 +20,7 @@
     margin: 0 auto;
     @include clearfix;
   }
+
   &__logo {
     display: block;
     font-size: 0;
@@ -29,9 +30,11 @@
     margin-left: 6.25%;
     float: left;
     background: url(../img/logo-pink-white-mobile.svg) no-repeat;
+
     &:hover {
       background: url(../img/logo-pink-hover-mobile.svg) no-repeat;
     }
+
     &:active {
       background: url(../img/logo-pink-active-mobile.svg) no-repeat;
     }
@@ -55,7 +58,9 @@
   }
 }
 
+
 @media ($retina-width) {
+
   .page-header {
     background-image: url(../img/iphone-hand-mobile@2x.png),
                       url(../img/bg-back-mobile@2x.jpg);
@@ -66,7 +71,9 @@
   }
 }
 
+
 @media ($tablet-widths) {
+
   .page-header {
     min-height: 729px;
     background: url(../img/iphone-hand-tablet@1x.png) no-repeat center bottom,
@@ -86,27 +93,31 @@
       line-height: 60px;
       max-width: 72%;
       min-height: 60px;
-      //margin: 0 auto;
-      //margin-top: 94px
     }
 
     &__wrapper {
       min-width: 700px;
     }
+
     &__logo {
       width: 147px;
       height: 40px;
       margin-top: -22px;
       background: url(../img/logo-pink-white-tablet.svg) no-repeat;
+
       &:hover {
         background: url(../img/logo-pink-hover-tablet.svg) no-repeat;
       }
+
       &:active {
         background: url(../img/logo-pink-active-tablet.svg) no-repeat;
       }
     }
   }
+
+
   @media ($retina-width) {
+
     .page-header {
       background-image: url(../img/iphone-hand-tablet@2x.png),
                         url(../img/bg-back-tablet@2x.jpg);
@@ -118,7 +129,9 @@
   }
 }
 
+
 @media ($desktop-widths) {
+
   .page-header {
     min-height: 853px;
     background-image: url(../img/iphone-hand-desktop@1x.png),
@@ -167,7 +180,9 @@
     }
   }
 
+
   @media ($retina-width) {
+
     .page-header {
       background-image: url(../img/iphone-hand-desktop@2x.png),
                         url(../img/bg-back-desktop.jpg);
