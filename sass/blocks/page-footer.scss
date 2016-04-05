@@ -51,28 +51,28 @@
     }
 
     &--twitter {
-      background: url(../img/icon-twitter.svg) no-repeat center;
+      background: url(../img/icons/icon-twitter.svg) no-repeat center;
 
         &:active {
-          background-image: url(../img/icon-twitter-active.svg);
+          background-image: url(../img/icons/icon-twitter-active.svg);
         }
     }
 
     &--facebook {
-      background: url(../img/icon-facebook.svg) no-repeat center;
+      background: url(../img/icons/icon-facebook.svg) no-repeat center;
       margin-left: 12px;
       margin-right: 12px;
 
       &:active {
-        background-image: url(../img/icon-facebook-active.svg);
+        background-image: url(../img/icons/icon-facebook-active.svg);
       }
     }
 
     &--youtube {
-      background: url(../img/icon-youtube.svg) no-repeat 17px center;
+      background: url(../img/icons/icon-youtube.svg) no-repeat 17px center;
 
       &:active {
-        background-image: url(../img/icon-youtube-active.svg);
+        background-image: url(../img/icons/icon-youtube-active.svg);
       }
     }
   }
