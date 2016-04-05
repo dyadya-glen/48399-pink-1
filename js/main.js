@@ -21,19 +21,6 @@ clased.addEventListener("click", function (event) {
   clased.classList.add("main-nav__clased--show");
 });
 
-// for (var i = 0; i < control.length; i++) {
-//   control[i].addEventListener("click", function (event) {
-//     event.preventDefault();
-//     for (var j = 0; j < review.length; j++) {
-//       if (review[j].classList.contains("review--show")) {
-//         review[j].classList.remove("review--show");
-//       }
-//       else {
-//         review[j++].classList.add("review--show");
-//       }
-//     }
-//   });
-// }
 
 ///////////////////////КАРТА/////////////////////////////
 function initialize() {
