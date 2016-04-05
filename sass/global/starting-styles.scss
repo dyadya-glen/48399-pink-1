@@ -8,20 +8,14 @@ body {
   font-style: normal;
   color: #283645;
   line-height: 30px;
-  //background: url("/img/pink-index-mobile.jpg") no-repeat center top ;
-  //min-height: 3168px;
 }
 
-@media ($tablet-widths) {
-  body {
-    //background: url("/img/pink-index-tablet.jpg") no-repeat center top ;
-    //min-height: 3425px;
-  }
-}
-
-@media ($desktop-widths) {
-  body {
-    //background: url("/img/pink-index-desktop.jpg") no-repeat center top ;
-    //min-height: 4220px;
-  }
-}
+// @media ($tablet-widths) {
+//   body {
+//   }
+// }
+//
+// @media ($desktop-widths) {
+//   body {
+//   }
+// }
