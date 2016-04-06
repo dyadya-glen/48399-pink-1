@@ -29,7 +29,7 @@ function initialize() {
   }
   var map = new google.maps.Map(document.getElementById('map-canvas'),
                                 mapOptions);
-  var image = "img/icons/icon-map-marker.svg";
+  var image = "../img/icons/icon-map-marker.svg";
   var myLatLng = new google.maps.LatLng(59.936128,30.3210702);
   var beachMarker = new google.maps.Marker({
     position: myLatLng,
